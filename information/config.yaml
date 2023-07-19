@@ -1,0 +1,28 @@
+# dataset information
+#dataset_label:
+#  - Asphalt
+#  - Cobblestone
+#  - Gravel
+#  - Icy
+#  - Rainy
+#  - Snowy
+
+dataset_label:
+  - Asphalt
+  - Cobblestone
+  - Gravel
+
+
+classNum: 3
+val_k : 5
+
+
+#train information
+batch_size: 256
+myNet : resnet18   # you can change this to 'resnet50' or ‘resnet18’ to test each model
+epochs : 5
+loss_ : 10
+# 每次训练前自定义一个不会重复的标识
+mark : '_justfortest1'
+
+#test_id: 0 # you can change this to 0,1,2,3,4 to test the model
